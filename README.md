@@ -4,23 +4,16 @@ The project was made for recruitment into the Travcorp company.
 
 ## Technologies
 
-Frontend:
-- React
-- SCSS
-
-Backend:
-- Node
-- Express
-
+| Frontend  | Backend  |
+| --- | --- |
+| - React | - Node |
+| - SCSS | - Express |
 ## Instruction 
 
 If you want to run the project follow the instructions below.
-### Backend
-- cd backend
-- npm i
-- npm start
 
-### Frontend
-- cd frontend
-- npm i
-- npm start
+| Frontend  | Backend  |
+| --- | --- |
+| cd frontend | cd backend |
+| npm i | npm i |
+| npm start | npm start |
