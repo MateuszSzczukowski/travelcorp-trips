@@ -1,0 +1,10 @@
+.details {
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray);
+
+    &__days {
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,16 @@
+.tripsList {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 0.9375rem;
+        
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 0.9375rem;
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

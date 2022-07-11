@@ -1,0 +1,11 @@
+.rating {    
+    display: flex;
+    align-items: center;
+    
+    &__value {
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-left: 0.3125rem;
+    }
+}

@@ -1,0 +1,14 @@
+.price {
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    &__separator {
+        margin: 0 0.3125rem;
+    }
+
+    &__discount {
+        color: var(--gray);
+        text-decoration: line-through;
+    }
+}
