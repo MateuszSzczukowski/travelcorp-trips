@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
 import "./App.scss";
-import TripsList from './components/TripsList/TripsList';
+import TripsList from "./components/TripsList/TripsList";
 
-const App = () => {
-  return (
+const App = () => (
     <div className="app">
-        <div className='container'>
-            <h1 className='app__title'>Recently viewed trips</h1>
+        <div className="container">
+            <h1 className="app__title">Recently viewed trips</h1>
             <TripsList />
         </div>
-
     </div>
-  );
-}
+)
 
 export default App;

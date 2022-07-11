@@ -1,6 +1,7 @@
 import React from "react";
 import "./Rating-styles.scss";
 import ReactStars from "react-rating-stars-component";
+import PropTypes from "prop-types";
 
 const Rating = ({rating}) => {
 
@@ -17,6 +18,10 @@ const Rating = ({rating}) => {
             <span className="rating__value">{rating}</span>
         </div>
     )
+}
+
+Rating.prototype = {
+    rating: PropTypes.number.isRequired
 }
 
 export default Rating;

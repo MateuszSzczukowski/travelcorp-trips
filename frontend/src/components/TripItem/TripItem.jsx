@@ -1,5 +1,6 @@
 import React from "react";
 import "./TripItem-styles.scss";
+import PropTypes from "prop-types";
 import Details from "../Details/Details";
 import Price from "../Price/Price";
 import Rating from "../Rating/Rating";
@@ -30,6 +31,16 @@ const TripItem = ({trip}) => {
             </div>
         </a>
     )
+}
+
+TripItem.prototype = {
+    title: PropTypes.string.isRequired,
+    countries: PropTypes.number.isRequired,
+    days: PropTypes.number.isRequired,
+    rating: PropTypes.number.isRequired,
+    price: PropTypes.object.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 }
 
 export default TripItem;
