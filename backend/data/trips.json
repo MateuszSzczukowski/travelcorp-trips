@@ -10,7 +10,7 @@
                 "from": 1.522,
                 "discount": 1.806
             },
-            "thumbnail": "./../../frontend/src/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image/house?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -23,7 +23,7 @@
                 "from": 1.627,
                 "discount": 1.974
             },
-            "thumbnail": "data/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -36,7 +36,7 @@
                 "from": 2.635,
                 "discount": 2.993
             },
-            "thumbnail": "data/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image/movie?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -49,7 +49,7 @@
                 "from": 2.635,
                 "discount": 3.879
             },
-            "thumbnail": "data/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image/furniture?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -62,7 +62,7 @@
                 "from": 2.067,
                 "discount": 2.236
             },
-            "thumbnail": "data/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image/album?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -75,7 +75,7 @@
                 "from": 62.147,
                 "discount": 58.929
             },
-            "thumbnail": "data/images/wakacje-1.jpeg",
+            "thumbnail": "https://api.lorem.space/image/book?w=400&h=200",
             "url": "http://google.pl"
         }
     ]
