@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Grecja Castro",
+            "countries": 2,
+            "days": 8,
+            "rating": 3,
+            "price": {
+                "from": 1.522,
+                "discount": 1.806
+            },
+            "thumbnail": "./../../frontend/src/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        },
+        {
+            "id": 2,
+            "title": "Turcja Selenium",
+            "countries": 4,
+            "days": 6,
+            "rating": 4,
+            "price": {
+                "from": 1.627,
+                "discount": 1.974
+            },
+            "thumbnail": "data/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        },
+        {
+            "id": 3,
+            "title": "Turcja Utopia Beach Club",
+            "countries": 11,
+            "days": 14,
+            "rating": 5,
+            "price": {
+                "from": 2.635,
+                "discount": 2.993
+            },
+            "thumbnail": "data/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        },
+        {
+            "id": 4,
+            "title": "Hiszpania Allegro Isora",
+            "countries": 8,
+            "days": 7,
+            "rating": 4.5,
+            "price": {
+                "from": 2.635,
+                "discount": 3.879
+            },
+            "thumbnail": "data/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        },
+        {
+            "id": 5,
+            "title": "Grecja Koni Village",
+            "countries": 2,
+            "days": 4,
+            "rating": 3.5,
+            "price": {
+                "from": 2.067,
+                "discount": 2.236
+            },
+            "thumbnail": "data/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        },
+        {
+            "id": 6,
+            "title": "Tahiti InterContinental",
+            "countries": 6,
+            "days": 11,
+            "rating": 4.6,
+            "price": {
+                "from": 62.147,
+                "discount": 58.929
+            },
+            "thumbnail": "data/images/wakacje-1.jpeg",
+            "url": "http://google.pl"
+        }
+    ]
+}
