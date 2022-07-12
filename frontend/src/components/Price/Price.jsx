@@ -27,8 +27,11 @@ const Price = ({price}) => {
 }
 
 Price.propTypes = {
-    from: PropTypes.number,
-    discount: PropTypes.number,
+    price: PropTypes.shape({
+        currency: PropTypes.string.isRequired,
+        from: PropTypes.number.isRequired,
+        discount: PropTypes.number.isRequired,
+    }).isRequired
 }
 
 export default Price;

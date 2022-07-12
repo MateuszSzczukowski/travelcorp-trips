@@ -34,10 +34,11 @@ const TripItem = ({trip}) => {
 TripItem.propTypes = {
     trip: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        countries: PropTypes.number.isRequired,
+        countries: PropTypes.number,
         days: PropTypes.number.isRequired,
-        rating: PropTypes.number.isRequired,
+        rating: PropTypes.number,
         price: PropTypes.shape({
+            currency: PropTypes.string.isRequired,
             from: PropTypes.number.isRequired,
             discount: PropTypes.number.isRequired
         }),
