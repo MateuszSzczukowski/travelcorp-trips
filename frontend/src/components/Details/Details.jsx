@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
 const Details = ({countries, days}) => {
     return (
         <>
-            {countries && days &&
+            {(countries || days) &&
                 <div className="details">
                     {countries &&
-                        <div className="details__countries">{countries} Countries</div>
+                        <div className="details__countries">{countries} {countries > 1 ? 'Countries' : 'Country'}</div>
                     }
 
                     {days &&
-                        <div className="details__days">{days} Days</div>
+                        <div className="details__days">{days} {days > 1 ? 'Days' : 'Day'}</div>
                     }
                 </div>
             }

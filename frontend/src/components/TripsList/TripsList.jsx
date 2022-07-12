@@ -6,14 +6,17 @@ const TripsList = () => {
     const [tripsList, setTripsList] = useState([]);
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_API)
-            .then(res => {
-             return res.json()   
-            })
-            .then(data => {
-                setTripsList(data.data);
-            })
-    }, []);
+        (async () => {
+            try {
+              const response = await fetch(process.env.REACT_APP_API);
+              const tripsData = await response.json();
+              setTripsList(tripsData.data);
+            } catch (err) {
+                throw new Error(`HTTP error! status: ${err.status}`);
+            }
+        })();
+    },[]);
+
     return (
         <>
             {tripsList.length > 0 &&

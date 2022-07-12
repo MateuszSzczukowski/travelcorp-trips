@@ -6,41 +6,44 @@ import Price from "../Price/Price";
 import Rating from "../Rating/Rating";
 
 const TripItem = ({trip}) => {
-    const { title, countries, days, rating, price, thumbnail, url  } = trip;
+    const { title, countries, days, rating, price, thumbnail, url } = trip;
     return (
         <a href={url} className="tripItem">
             <div className="tripItem__image-wrapper">
-                <img className="tripItem__image" src={thumbnail} alt={title} />
+                {thumbnail &&
+                    <img className="tripItem__image" src={thumbnail} alt={title} />
+                }
             </div>
-            <div className="tripItem__info">
-                <div className="tripItem__info-row">
+            {(title || countries || days || rating || price) &&
+                <div className="tripItem__info">
                     <Details 
                         countries={countries}
                         days={days}
                     />
-                    <h2 className="tripItem__title">{title}</h2>
+                    {title &&
+                        <h2 className="tripItem__title">{title}</h2>
+                    }
+                    <Rating rating={rating} />
+                    <Price price={price} />
                 </div>
-                <div className="tripItem__info-row">
-                    <Rating 
-                        rating={rating}
-                    />
-                    <Price 
-                        price={price}
-                    />
-                </div>
-            </div>
+            }
         </a>
     )
 }
 
 TripItem.propTypes = {
-    title: PropTypes.string.isRequired,
-    countries: PropTypes.number.isRequired,
-    days: PropTypes.number.isRequired,
-    rating: PropTypes.number.isRequired,
-    price: PropTypes.object.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
+    trip: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        countries: PropTypes.number.isRequired,
+        days: PropTypes.number.isRequired,
+        rating: PropTypes.number.isRequired,
+        price: PropTypes.shape({
+            from: PropTypes.number.isRequired,
+            discount: PropTypes.number.isRequired
+        }),
+        thumbnail: PropTypes.string,
+        url: PropTypes.string.isRequired,
+    }).isRequired
 }
 
 export default TripItem;
