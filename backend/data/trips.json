@@ -3,14 +3,15 @@
         {
             "id": 1,
             "title": "Grecja Castro",
-            "countries": 2,
-            "days": 8,
+            "countries": 1,
+            "days": 18,
             "rating": 3,
             "price": {
+                "currency": "€",
                 "from": 1.522,
                 "discount": 1.806
             },
-            "thumbnail": "https://api.lorem.space/image/house?w=400&h=200",
+            "thumbnail": "https://api.lorem.space/image?w=400&h=200",
             "url": "http://google.pl"
         },
         {
@@ -20,6 +21,7 @@
             "days": 6,
             "rating": 4,
             "price": {
+                "currency": "€",
                 "from": 1.627,
                 "discount": 1.974
             },
@@ -33,6 +35,7 @@
             "days": 14,
             "rating": 5,
             "price": {
+                "currency": "€",
                 "from": 2.635,
                 "discount": 2.993
             },
@@ -46,6 +49,7 @@
             "days": 7,
             "rating": 4.5,
             "price": {
+                "currency": "€",
                 "from": 2.635,
                 "discount": 3.879
             },
@@ -59,6 +63,7 @@
             "days": 4,
             "rating": 3.5,
             "price": {
+                "currency": "€",
                 "from": 2.067,
                 "discount": 2.236
             },
@@ -72,6 +77,7 @@
             "days": 11,
             "rating": 4.6,
             "price": {
+                "currency": "€",
                 "from": 62.147,
                 "discount": 58.929
             },
