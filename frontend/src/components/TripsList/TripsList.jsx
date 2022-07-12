@@ -14,16 +14,19 @@ const TripsList = () => {
                 setTripsList(data.data);
             })
     }, []);
-
     return (
-        <div className="tripsList__wrapper">
-            {tripsList.map(item => (
-                <TripItem 
-                    key = {item.id}
-                    trip = {item}
-                />
-            ))}
-        </div>
+        <>
+            {tripsList.length > 0 &&
+                <div className="tripsList__wrapper">
+                    {tripsList.map(item => (
+                        <TripItem 
+                            key={item.id}
+                            trip={item}
+                        />
+                    ))}
+                </div>
+            }
+        </>
     )
 }
 

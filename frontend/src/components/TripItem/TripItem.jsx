@@ -6,7 +6,7 @@ import Price from "../Price/Price";
 import Rating from "../Rating/Rating";
 
 const TripItem = ({trip}) => {
-    const { title, countries, days, rating, price, thumbnail, url  } = trip || {};
+    const { title, countries, days, rating, price, thumbnail, url  } = trip;
     return (
         <a href={url} className="tripItem">
             <div className="tripItem__image-wrapper">
@@ -15,17 +15,17 @@ const TripItem = ({trip}) => {
             <div className="tripItem__info">
                 <div className="tripItem__info-row">
                     <Details 
-                        countries = {countries}
-                        days = {days}
+                        countries={countries}
+                        days={days}
                     />
                     <h2 className="tripItem__title">{title}</h2>
                 </div>
                 <div className="tripItem__info-row">
                     <Rating 
-                        rating = {rating}
+                        rating={rating}
                     />
                     <Price 
-                        price = {price}
+                        price={price}
                     />
                 </div>
             </div>
@@ -33,7 +33,7 @@ const TripItem = ({trip}) => {
     )
 }
 
-TripItem.prototype = {
+TripItem.propTypes = {
     title: PropTypes.string.isRequired,
     countries: PropTypes.number.isRequired,
     days: PropTypes.number.isRequired,

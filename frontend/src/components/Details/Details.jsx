@@ -4,14 +4,23 @@ import PropTypes from "prop-types";
 
 const Details = ({countries, days}) => {
     return (
-        <div className="details">
-            <div className="details__countries">{countries} Countries</div>,
-            <div className="details__days">{days} Days</div>
-        </div>
+        <>
+            {countries && days &&
+                <div className="details">
+                    {countries &&
+                        <div className="details__countries">{countries} Countries</div>
+                    }
+
+                    {days &&
+                        <div className="details__days">{days} Days</div>
+                    }
+                </div>
+            }
+        </>
     )
 }
 
-Details.prototype = {
+Details.propTypes = {
     countries: PropTypes.number.isRequired,
     days: PropTypes.number.isRequired,
 }

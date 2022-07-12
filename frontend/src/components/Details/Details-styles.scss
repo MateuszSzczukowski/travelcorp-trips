@@ -4,6 +4,13 @@
     font-weight: 600;
     color: var(--gray);
 
+    &__countries {
+        &::after {
+            content: ',';
+            display: inline-block;
+        }
+    }
+
     &__days {
         margin-left: 0.5rem;
     }

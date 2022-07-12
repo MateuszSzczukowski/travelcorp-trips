@@ -1,13 +1,11 @@
 import React from "react";
-import "./App.scss";
 import TripsList from "./components/TripsList/TripsList";
+import Heading from "./components/Heading/Heading";
 
 const App = () => (
-    <div className="app">
-        <div className="container">
-            <h1 className="app__title">Recently viewed trips</h1>
-            <TripsList />
-        </div>
+    <div className="container">
+        <Heading />
+        <TripsList />
     </div>
 )
 
